@@ -1,0 +1,62 @@
+{
+  "reference_american_price": 7.952030362488927,
+  "reference_european_price": 7.409627004945488,
+  "dqn_seed_values": {
+    "0": 7.557252869611797
+  },
+  "median_seed": 0,
+  "checkpoint_selection": {
+    "candidates": {
+      "final": {
+        "episode": 20000,
+        "checkpoint_value": 5.17051352100467,
+        "confirmed_value": 5.382789318397228,
+        "confirmed_se": 0.07391935756825478
+      },
+      "peak": {
+        "episode": 6000,
+        "checkpoint_value": 8.273248215457613,
+        "confirmed_value": 7.570283123363052,
+        "confirmed_se": 0.24347912825106677
+      }
+    },
+    "selected": "peak"
+  },
+  "results": {
+    "always_hold": {
+      "raw_payoff_mean": 7.742804038690627,
+      "discounted_payoff_mean": 7.3651830297455,
+      "discounted_payoff_std": 10.921988330454454,
+      "exercise_rate": 0.0,
+      "se": 0.10921988330454453
+    },
+    "immediate_exercise": {
+      "raw_payoff_mean": 0.0,
+      "discounted_payoff_mean": 0.0,
+      "discounted_payoff_std": 0.0,
+      "exercise_rate": 1.0,
+      "se": 0.0
+    },
+    "random": {
+      "raw_payoff_mean": 0.9712348512003497,
+      "discounted_payoff_mean": 0.9690140542974539,
+      "discounted_payoff_std": 2.1439918167904284,
+      "exercise_rate": 1.0,
+      "se": 0.021439918167904283
+    },
+    "tabular_q": {
+      "raw_payoff_mean": 4.204827503721022,
+      "discounted_payoff_mean": 4.175405450361301,
+      "discounted_payoff_std": 2.466033019562778,
+      "exercise_rate": 0.8212,
+      "se": 0.02466033019562778
+    },
+    "dqn": {
+      "raw_payoff_mean": 7.8867284099091455,
+      "discounted_payoff_mean": 7.557252869611797,
+      "discounted_payoff_std": 10.832875757868512,
+      "exercise_rate": 0.4516,
+      "se": 0.10832875757868513
+    }
+  }
+}
